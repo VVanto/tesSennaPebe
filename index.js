@@ -45,7 +45,7 @@ $("#data").html(data)
 $(".btn.HiToLo").click(function() { 
 
     isi.sort((a, b) => {
-        return a.id - b.id;
+        return b.id - a.id;
     });
     var data = "";
     isi.forEach(function(e) {
@@ -60,7 +60,7 @@ $(".btn.HiToLo").click(function() {
    $(".btn.LoToHi").click(function() { 
    
        isi.sort((a, b) => {
-           return b.id - a.id;
+           return a.id - b.id;
        });
        var data = "";
        isi.forEach(function(e) {
